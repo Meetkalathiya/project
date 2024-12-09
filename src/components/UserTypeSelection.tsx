@@ -37,11 +37,13 @@ const UserTypeSelection: React.FC = () => {
           onClick={() => navigate('/vendor')}
           className="relative bg-gradient-to-br from-indigo-500 to-purple-500 p-8 rounded-2xl shadow-2xl transform transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(128,90,213,0.7)] flex flex-col items-center gap-4 group text-white"
         >
-          <div className="absolute inset-0 opacity-20 bg-pattern-dots-md group-hover:opacity-30 transition-opacity"></div>
+          <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity"></div>
           <Store className="w-16 h-16 text-white group-hover:scale-110 transition-transform" />
           <div className="text-center z-10">
             <h2 className="text-3xl font-bold">Vendor Portal</h2>
-            <p className="mt-2 text-sm text-gray-200">Manage inventory, create bills, and track sales</p>
+            <p className="mt-2 text-sm text-gray-200">
+              Manage inventory, create bills, and track sales
+            </p>
           </div>
         </button>
 
@@ -50,11 +52,13 @@ const UserTypeSelection: React.FC = () => {
           onClick={() => navigate('/customer')}
           className="relative bg-gradient-to-br from-green-400 to-teal-500 p-8 rounded-2xl shadow-2xl transform transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(16,185,129,0.7)] flex flex-col items-center gap-4 group text-white"
         >
-          <div className="absolute inset-0 opacity-20 bg-pattern-dots-md group-hover:opacity-30 transition-opacity"></div>
+          <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity"></div>
           <Users className="w-16 h-16 text-white group-hover:scale-110 transition-transform" />
           <div className="text-center z-10">
             <h2 className="text-3xl font-bold">Customer Portal</h2>
-            <p className="mt-2 text-sm text-gray-200">View products, make purchases, and track orders</p>
+            <p className="mt-2 text-sm text-gray-200">
+              View products, make purchases, and track orders
+            </p>
           </div>
         </button>
 
@@ -63,11 +67,13 @@ const UserTypeSelection: React.FC = () => {
           onClick={() => navigate('/history')}
           className="relative bg-gradient-to-br from-orange-400 to-yellow-500 p-8 rounded-2xl shadow-2xl transform transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(252,211,77,0.7)] flex flex-col items-center gap-4 group text-white"
         >
-          <div className="absolute inset-0 opacity-20 bg-pattern-dots-md group-hover:opacity-30 transition-opacity"></div>
+          <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity"></div>
           <ClipboardList className="w-16 h-16 text-white group-hover:scale-110 transition-transform" />
           <div className="text-center z-10">
             <h2 className="text-3xl font-bold">History of Orders</h2>
-            <p className="mt-2 text-sm text-gray-200">Review past orders and track order history</p>
+            <p className="mt-2 text-sm text-gray-200">
+              Review past orders and track order history
+            </p>
           </div>
         </button>
       </div>

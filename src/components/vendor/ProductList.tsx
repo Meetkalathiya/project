@@ -12,6 +12,7 @@ const ProductList: React.FC<ProductListProps> = ({ onEdit, onDelete, onAddNew })
   const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
+    console.log("effect")
     const fetchProducts = async () => {
       try {
         const response = await fetch('http://localhost:5000/api/products', {
@@ -20,7 +21,7 @@ const ProductList: React.FC<ProductListProps> = ({ onEdit, onDelete, onAddNew })
             'Content-Type': 'application/json',
           },
         });
-
+        console.log("kk")
         if (!response.ok) {
           throw new Error(`Failed to fetch products: ${response.statusText}`);
         }
